@@ -1,0 +1,6 @@
+.env.local
+.env.lokal
+coba.html
+node_modules/*
+catatan.txt
+.next/*

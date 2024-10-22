@@ -1,0 +1,14 @@
+.navlink {
+    font-family: Signika;
+    text-transform: normal;
+    color: #f5f5f5;    
+    font-size: medium;
+  }
+  .navlink:hover,.navlink:active {
+    color: #fbbf24
+  }
+  
+  .active {
+    color: #fbbf24;
+  }
+  

@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Passion One";
+  src: url(../assets/fonts/Passion_One/PassionOne-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Open-Sans";
+  src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Signika";
+  src: url(../assets/fonts/Signika/Signika-VariableFont_GRAD\,wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+body {
+	font:14px Roboto,sans-serif,Open-Sans, Arial, Helvetica;
+  /* font-family: "Helvetica";
+  font-size:14px; */
+  background-color: #F8F7F0;
+}
+
+p {
+  font:14px Roboto,sans-serif,Open-Sans, Arial, Helvetica;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+	font-family: "Signika";
+}
+
+.font-signika {
+  font-family: "Signika";
+}
+/* 
+.navlink {
+  font-family: Signika;
+  @apply uppercase text-neutral-100
+}
+.navlink:hover,.navlink:active {
+  @apply  text-amber-200;
+}
+.navlink.active {
+  @apply  text-amber-200;
+} */
+main {
+  @apply min-h-[400px]
+}
+header ul li {
+  display: list-item;
+}
+
+header .brand {  
+  @apply  text-white text-amber-400 text-4xl;
+}
+
+main a {
+  @apply text-amber-800 underline
+}
+
+@keyframes flip {
+  0% { transform: rotateY(0); }
+  100% { transform: rotateY(180deg); }  
+}
+.flip {
+  display: inline-block;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip:hover {
+  transform: rotateY(180deg);
+}
+
+.svg-blue {
+  filter: invert(35%) sepia(98%) saturate(3162%) hue-rotate(190deg) brightness(97%) contrast(91%);
+}
+
+.svg-amber {
+  filter: invert(86%) sepia(88%) saturate(626%) hue-rotate(329deg) brightness(102%) contrast(102%);
+}
+
+.svg-putih {
+  filter: invert(100%) brightness(0.9);
+}
+
+.svg-gray {
+  filter: invert(39%) sepia(7%) saturate(40%) hue-rotate(184deg) brightness(95%) contrast(15%);
+}
+.bg-hijau {
+  background-color: #5B8C51;
+}
+
+.text-hijau {
+  color: #5B8C51;
+}
+
+.highlight {
+  @apply bg-green-300;
+}
+
+@media only screen and (max-width: 300px) {
+  .brandName {
+    display:none;
+  }
+}
